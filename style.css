@@ -1,0 +1,160 @@
+.header {
+  place-items: center;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  text-align: left;
+}
+
+body {
+  background-color: #989898;
+  margin: 40px;
+  overflow-x: hidden;
+}
+
+.navBar {
+  background-color: white;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  padding-right: 0.5%;
+  padding-left: 0.5%;
+}
+
+/* grid */
+
+.wrapperChoices {
+  display: grid;
+  grid-auto-flow: row;
+  color: #444;
+  place-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  gap: 20%;
+}
+
+.choices {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3%;
+  width: 100%;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+/* end grid */
+
+@font-face {
+  font-family: "Alfa Slav One";
+  src: url("assets/Alfa_Slav_one.ttf") format("truetype");
+}
+
+.tnav {
+  background-color: #ffffff;
+  overflow: hidden;
+  size: 10px;
+  font-size: 30%;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0.5%;
+}
+
+.tnav > a {
+  float: right;
+  color: #0f0f0f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Audiowide", sans-serif;
+  border-radius: 10px;
+}
+
+.tnav > a:hover {
+  background-color: #b8b8b8;
+  color: black;
+}
+
+.nav > a.active {
+  background-color: #ffffff;
+  color: rgb(15, 15, 15);
+}
+
+/* footer sticking to bottom */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  gap: 5%;
+}
+
+main {
+  flex: 1;
+  
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+/* END of fotter sticking to bottom */
+/* footer basics */
+.footer {
+  background: #000;
+  padding: 30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align: center;
+}
+
+.footer > .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+
+.footer > .row a {
+  color: gray;
+  transition: 0.5s;
+}
+
+.footer > .row a:hover {
+  color: #fff;
+}
+
+.footer > .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width:720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
+
+/* end footer basics */
